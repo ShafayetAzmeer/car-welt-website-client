@@ -38,9 +38,9 @@ function App() {
               <Review/>
             </Route>
             
-            <PrivateRoute path="/explore">
+            <Route path="/explore">
               <ExploreItems/>
-            </PrivateRoute>
+            </Route>
 
             <PrivateRoute path="/dashboard">
               <Dashboard/>
@@ -66,7 +66,7 @@ function App() {
               <NotFound></NotFound>
             </Route>
           </Switch>
-          
+
         <Footer></Footer>
         </Router>
       </AuthProvider>
