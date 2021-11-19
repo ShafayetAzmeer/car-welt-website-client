@@ -1,70 +1,28 @@
-# Getting Started with Create React App
+# Car Welt
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+For the first time in your city, we have come to change your experience and make it one dimensional advance. You can visit our website at [https://tourism-website-client-s-1e488.web.app/](https://tourism-website-client-s-1e488.web.app/)
 
-## Available Scripts
+## Our Exclusive Features
 
-In the project directory, you can run:
+### `Best Quality Car Engine`
 
-### `yarn start`
+The heart and soul of your vehicle is the internal combustion engine. The engine block features parts such as the timing chain, camshaft, crankshaft, spark plugs, cylinder heads, valves and pistons. We quarantee the best quality of engines.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### `Exclusive Alterrnators`
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Alternator is a part of the electrical system. The alternator charges the battery and powers the electrical system while your car is running. And we have exclusive collection of them.
 
-### `yarn test`
+### `Greasable Design`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+When water, dirt, and debris get into non-greasable socket-style chassis components, there’s no way to get them out. Socket contamination can result in stud corrosion, increased wear and ultimately joint failure. MOOG greasable designs allow fresh grease to be injected, pushing old grease and contaminants out to extend service life. And we are providing all sorts of these !
 
-### `yarn build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### `MOOG Patented Cover Plate & Belleville Washer`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Deflection (or looseness) in the socket is a common symptom of ball joint failure. Looseness develops as bearing surfaces wear. Eventually the looseness will have adverse effects on the vehicle, causing uneven tire wear, noises, and steering wandering. MOOG’s patented pressed-in cover plate minimizes socket looseness to maximize socket life. Combined with a Belleville washer spring preload, this technique provides a consistently tight socket, when new, that maintains the like-new steering feel longer.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### `Incredible Brakes`
 
-### `yarn eject`
+Found on all four wheels, your brakes are one of the most important safety systems on your vehicle. Disc brakes can be found on the front and back wheels and feature brake pads and calipers. Drum brakes with brake shoes and wheel cylinders may be found on the back wheels of some vehicles. We assure you the best quality of it.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
