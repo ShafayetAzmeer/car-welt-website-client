@@ -16,6 +16,7 @@ import Dashboard from './Pages/Dashboard/Dashboard/Dashboard';
 import Purchase from './Pages/Purchase/Purchase';
 import ExplorePurchase from './Pages/ExplorePurchase/ExplorePurchase';
 import Review from './Pages/Dashboard/Review/Review';
+import NotFound from './Pages/NotFound/NotFound';
 
 
 function App() {
@@ -25,6 +26,10 @@ function App() {
       <Router>
         <Header></Header>
           <Switch>
+          <Route exact path='/'>
+              <Home></Home>
+            </Route>
+
             <Route path="/home">
               <Home/>
             </Route>
@@ -57,10 +62,11 @@ function App() {
               <Register/>
             </Route>
 
-            <Route exact path="/">
-              <Home />
+            <Route path='*'>
+              <NotFound></NotFound>
             </Route>
           </Switch>
+          
         <Footer></Footer>
         </Router>
       </AuthProvider>

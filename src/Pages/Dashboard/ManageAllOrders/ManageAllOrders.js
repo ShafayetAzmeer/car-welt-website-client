@@ -44,7 +44,6 @@ const ManageAllOrders = () => {
         .then(res => res.json())
         .then(data => {
             if(data.modifiedCount){
-                console.log(data);
                 alert("Order has shipped successfully")
                 setControlUpdate(!controlUpdate);
             }

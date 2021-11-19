@@ -15,7 +15,6 @@ const Register = () => {
         const value = e.target.value;
         const newRegisterData = {...registerData};
         newRegisterData[field] = value;
-        //console.log(field, newRegisterData);
         setRegisterData(newRegisterData);
     }
 
@@ -23,8 +22,7 @@ const Register = () => {
         if (registerData.password !== registerData.password2) {
             alert('Your password did not match');
             return
-        }
-        // console.log(registerData.email, registerData.password);       
+        }     
         registerUser(registerData.email, registerData.password, registerData.name, history)
         e.preventDefault();
     }
