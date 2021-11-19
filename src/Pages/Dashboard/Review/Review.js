@@ -16,7 +16,7 @@ const Review = () => {
     const onSubmit = (data) => {
        data.email = user.email;
 
-       fetch("http://localhost:7000/review", {
+       fetch("https://fierce-lake-25951.herokuapp.com/review", {
         method: "POST",
         headers: { "content-type": "application/json" },
         body: JSON.stringify(data),

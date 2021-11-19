@@ -10,7 +10,7 @@ const AddAProduct = () => {
       } = useForm();
     
       const onSubmit = (data) => {
-      fetch("http://localhost:7000/addNewProduct", {
+      fetch("https://fierce-lake-25951.herokuapp.com/addNewProduct", {
         method: "POST",
         headers: { "content-type": "application/json" },
         body: JSON.stringify(data),

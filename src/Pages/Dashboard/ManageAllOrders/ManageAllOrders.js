@@ -12,7 +12,7 @@ const ManageAllOrders = () => {
     // }
 
     useEffect(()=> {
-        fetch('http://localhost:7000/manageAllOrders')
+        fetch('https://fierce-lake-25951.herokuapp.com/manageAllOrders')
             .then(res => res.json())
             .then(data => setManageAllOrders(data));
       }, [controlDelete, controlUpdate])  
@@ -20,7 +20,7 @@ const ManageAllOrders = () => {
       const handleDeleteManageOrder = (id) => {
         const proceed = window.confirm('Are you sure, you want to cancel the order ?');
         if(proceed){
-            fetch(`http://localhost:7000/deleteManageOrder/${id}`, {
+            fetch(`https://fierce-lake-25951.herokuapp.com/deleteManageOrder/${id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())
@@ -34,7 +34,7 @@ const ManageAllOrders = () => {
       };
 
       const handleUpdate = (id) => {
-        fetch(`http://localhost:7000/updateStatus/${id}`, {
+        fetch(`https://fierce-lake-25951.herokuapp.com/updateStatus/${id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

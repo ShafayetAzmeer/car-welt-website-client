@@ -6,7 +6,7 @@ const ManageProducts = () => {
     const [controlDelete, setControlDelete] = useState(false);
 
     useEffect(()=> {
-        fetch('http://localhost:7000/manageProducts')
+        fetch('https://fierce-lake-25951.herokuapp.com/manageProducts')
             .then(res => res.json())
             .then(data => setManageProducts(data));
       }, [controlDelete])  
@@ -14,7 +14,7 @@ const ManageProducts = () => {
       const handleDeleteManageProduct = (id) => {
         const proceed = window.confirm('Are you sure, you want to remove the product ?');
         if(proceed){
-            fetch(`http://localhost:7000/deleteManageProducts/${id}`, {
+            fetch(`https://fierce-lake-25951.herokuapp.com/deleteManageProducts/${id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())

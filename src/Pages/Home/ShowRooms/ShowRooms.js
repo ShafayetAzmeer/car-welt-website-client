@@ -6,7 +6,7 @@ const ShowRooms = () => {
     const [showRooms, setShowRooms] = useState([]);
 
     useEffect(()=> {
-      fetch('http://localhost:7000/showRooms')
+      fetch('https://fierce-lake-25951.herokuapp.com/showRooms')
           .then(res => res.json())
           .then(data => setShowRooms(data));
     }, [])  

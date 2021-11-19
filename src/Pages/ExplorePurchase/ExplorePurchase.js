@@ -10,7 +10,7 @@ const ExplorePurchase = () => {
     const {user} = useAuth();
 
     useEffect(() => {
-        fetch(`http://localhost:7000/allProductDetail/${allProductID}`)
+        fetch(`https://fierce-lake-25951.herokuapp.com/allProductDetail/${allProductID}`)
           .then((res) => res.json())
           .then((data) => setPurchase(data));
       }, []);
@@ -26,7 +26,7 @@ const ExplorePurchase = () => {
        data.email = user.email;
        data.status = "Order Pending";
 
-       fetch("http://localhost:7000/confirmAllProductPurchase", {
+       fetch("https://fierce-lake-25951.herokuapp.com/confirmAllProductPurchase", {
         method: "POST",
         headers: { "content-type": "application/json" },
         body: JSON.stringify(data),

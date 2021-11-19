@@ -67,7 +67,7 @@ const useFirebase = () => {
 
     // Admin Check
     useEffect(()=> {
-        fetch(`http://localhost:7000/users/${user.email}`)
+        fetch(`https://fierce-lake-25951.herokuapp.com/users/${user.email}`)
         .then(res=>res.json())
         .then(data => setAdmin(data.admin))
     }, [user.email])
@@ -84,7 +84,7 @@ const useFirebase = () => {
     
     const saveUser = (email, displayName) => {
         const user = { email, displayName };
-        fetch("http://localhost:7000/users", {
+        fetch("https://fierce-lake-25951.herokuapp.com/users", {
             method:'POST',
             headers: {
                 'content-type': 'application/json'
