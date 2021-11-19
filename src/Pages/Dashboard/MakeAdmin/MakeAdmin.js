@@ -38,7 +38,7 @@ const MakeAdmin = () => {
             <form onSubmit={handleMakeAdmin} className="w-50">
                     <FloatingLabel 
                         controlId="floatingInput"
-                        label="Your Email "
+                        label="Email "
                         className="mb-4"
                     >
                         <Form.Control 
