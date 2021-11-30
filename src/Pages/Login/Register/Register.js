@@ -1,14 +1,14 @@
 import React from 'react';
 import { useState } from 'react';
 import { Alert, Container, FloatingLabel, Form, Nav, Spinner } from 'react-bootstrap';
-import { Link, useHistory} from 'react-router-dom';
+import { Link, useNavigate} from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 
 const Register = () => {
 
     const [registerData, setRegisterData] = useState({})
     const {user, registerUser, isLoading, authError} = useAuth();
-    const history = useHistory();
+    const navigate = useNavigate();
 
     const handleOnBlur = e => {
         const field = e.target.name;
@@ -23,7 +23,7 @@ const Register = () => {
             alert('Your password did not match');
             return
         }     
-        registerUser(registerData.email, registerData.password, registerData.name, history)
+        registerUser(registerData.email, registerData.password, registerData.name, navigate)
         e.preventDefault();
     }
 

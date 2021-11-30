@@ -1,22 +1,12 @@
 import React, { useState } from 'react';
-import { Button, Container } from 'react-bootstrap';
-import MyOrders from '../MyOrders/MyOrders';
-import Pay from '../Pay/Pay'
+import { Button} from 'react-bootstrap';
 import {
-    Switch,
-    Route,
-    Link,
-    useRouteMatch
+    Outlet,
+    Link
 } from "react-router-dom";
-import Review from '../Review/Review';
-import ManageAllOrders from '../ManageAllOrders/ManageAllOrders';
-import AddAProduct from '../AddAProduct/AddAProduct';
-import MakeAdmin from '../MakeAdmin/MakeAdmin';
-import ManageProducts from '../ManageProducts/ManageProducts';
 import useAuth from '../../../hooks/useAuth';
 
 const Dashboard = () => {
-    let { path, url } = useRouteMatch();
     const {admin, logout} = useAuth();
 
     return (
@@ -44,14 +34,14 @@ const Dashboard = () => {
 
                         {!admin && <div>
                             <li className="mb-4">
-                                <Link to={`${url}/pay`} style={{ 
+                                <Link to={`/dashboard/pay`} style={{ 
                                     color: 'white',
                                     textDecoration: 'none' 
                                 }}>Pay</Link>
                             </li>
                             
                             <li className="mb-4">
-                                <Link to={`${url}/myOrders`} style={{ 
+                                <Link to={`/dashboard/myOrders`} style={{ 
                                     color: 'white',
                                     textDecoration: 'none' 
                                 }}
@@ -59,7 +49,7 @@ const Dashboard = () => {
                             </li>
 
                             <li className="mb-4">
-                                <Link to={`${url}/review`} style={{ 
+                                <Link to={`/dashboard/review`} style={{ 
                                     color: 'white',
                                     textDecoration: 'none' 
                                 }}
@@ -69,7 +59,7 @@ const Dashboard = () => {
 
                        {admin && <div>
                             <li className="mb-4"> 
-                                <Link to={`${url}/manageAllOrders`} style={{ 
+                                <Link to={`/dashboard/manageAllOrders`} style={{ 
                                     color: 'white',
                                     textDecoration: 'none' 
                                 }}
@@ -77,7 +67,7 @@ const Dashboard = () => {
                             </li>
 
                             <li className="mb-4">
-                                <Link to={`${url}/addAProduct`} style={{ 
+                                <Link to={`/dashboard/addAProduct`} style={{ 
                                     color: 'white',
                                     textDecoration: 'none' 
                                 }}
@@ -85,7 +75,7 @@ const Dashboard = () => {
                             </li>
 
                             <li className="mb-4">
-                                <Link to={`${url}/makeAdmin`} style={{ 
+                                <Link to={`/dashboard/makeAdmin`} style={{ 
                                     color: 'white',
                                     textDecoration: 'none' 
                                 }}
@@ -93,7 +83,7 @@ const Dashboard = () => {
                             </li>
 
                             <li className="mb-4">
-                                <Link to={`${url}/manageProducts`} style={{ 
+                                <Link to={`/dashboard/manageProducts`} style={{ 
                                     color: 'white',
                                     textDecoration: 'none' 
                                 }}
@@ -111,40 +101,9 @@ const Dashboard = () => {
                 </div>
 
                 <div style={{backgroundColor: 'none' }} className="col-md-9 text-center">
-                    <Switch>
-                        <Route exact path={path}>
-                            <h3 className="text-primary mt-5 fs-1 fw-bold"
-                            >Please select from dashboard</h3>
-                        </Route>
-
-                        <Route path={`${path}/pay`}>
-                            <Pay></Pay>
-                        </Route>
-
-                        <Route path={`${path}/myOrders`}>
-                            <MyOrders></MyOrders>
-                        </Route>
-
-                        <Route path={`${path}/review`}>
-                            <Review></Review>
-                        </Route>
-
-                        <Route path={`${path}/manageAllOrders`}>
-                            <ManageAllOrders></ManageAllOrders>
-                        </Route>
-
-                        <Route path={`${path}/addAProduct`}>
-                            <AddAProduct></AddAProduct>
-                        </Route>
-
-                        <Route path={`${path}/makeAdmin`}>
-                            <MakeAdmin></MakeAdmin>
-                        </Route>
-
-                        <Route path={`${path}/manageProducts`}>
-                            <ManageProducts></ManageProducts>
-                        </Route>
-                    </Switch>
+                    <Outlet>
+                       
+                    </Outlet>
                 </div>
                 
             </div>

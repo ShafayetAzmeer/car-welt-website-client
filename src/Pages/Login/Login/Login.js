@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import { Alert, Container, FloatingLabel, Form, Nav, Spinner } from 'react-bootstrap';
-import { Link, useLocation, useHistory } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 
 const Login = () => {
@@ -9,7 +9,7 @@ const Login = () => {
     const [loginData, setLoginData] = useState({})
     const {user, loginUser, isLoading, authError} = useAuth();
     const location = useLocation();
-    const history = useHistory();
+    const navigate = useNavigate();
 
     const handleOnBlur = e => {
         const field = e.target.name;
@@ -20,7 +20,7 @@ const Login = () => {
     }
 
     const handleLogin = e => {
-        loginUser(loginData.email, loginData.password, location, history)
+        loginUser(loginData.email, loginData.password, location, navigate)
         // alert("Successfully Logged in");
         e.preventDefault();
     }
